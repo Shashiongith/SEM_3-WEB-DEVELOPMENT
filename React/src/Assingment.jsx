@@ -34,10 +34,14 @@ const Assingment = () => {
     // <Question4_child1 task = {task} />
     // <Question4_child2 task = {task} setTask = {setTask} />
     // </>
-    <>
-    <Question5_child1 likes = {likes} />
-    <Question5_child2 likes = {likes} setLikes = {setLikes} onLike={updateLikes}/>
-    </>
+
+
+    // <>
+    // <Question5_child1 likes = {likes} />
+    // <Question5_child2 likes = {likes} setLikes = {setLikes} onLike={updateLikes}/>
+    // </>
+
+    <></>
 
   )
 }

@@ -9,10 +9,6 @@ import ProductList from './class3/ProductList.jsx'
 import ProductDetails from './class3/ProductDetails.jsx'
 import A from './class3/A.jsx'
 import { Route, Routes } from 'react-router-dom'
-// import Question1 from './assingment1/Question1.jsx'
-// import Question2 from './assingment1/Question2.jsx'
-// import Question3_child1 from './assingment1/Question3_child1.jsx'
-// import Question3_child2 from './assingment1/Question3_child2.jsx'
 import { useState } from 'react'
 
 const App = () => {
