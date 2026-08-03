@@ -11,6 +11,7 @@ import A from './class3/A.jsx'
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
 import UseReducerDemo from './class4/UseReducerDemo.jsx'
+import TodoList from './class4/TodoList.jsx'
 
 const App = () => {
   
@@ -27,7 +28,8 @@ const App = () => {
         <Route  path='/product/:id'   element={<ProductDetails/>}/>
 
        </Routes> */}
-       <UseReducerDemo />
+       {/* <UseReducerDemo /> */}
+       <TodoList />
 
     </div>
   )
