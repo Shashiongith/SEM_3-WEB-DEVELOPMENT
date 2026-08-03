@@ -8,10 +8,11 @@ import Assingment from './Assingment.jsx'
 
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
-    <context.Provider value={{name:"Shashikant", age:21}}>  
-    <Assingment />
-    </context.Provider>
-    </BrowserRouter>
+    // <BrowserRouter>
+    // <context.Provider value={{name:"Shashikant", age:21}}>  
+    // <Assingment />
+    // </context.Provider>
+    // </BrowserRouter>
+    <App />
 
 )

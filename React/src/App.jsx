@@ -10,6 +10,7 @@ import ProductDetails from './class3/ProductDetails.jsx'
 import A from './class3/A.jsx'
 import { Route, Routes } from 'react-router-dom'
 import { useState } from 'react'
+import UseReducerDemo from './class4/UseReducerDemo.jsx'
 
 const App = () => {
   
@@ -26,7 +27,7 @@ const App = () => {
         <Route  path='/product/:id'   element={<ProductDetails/>}/>
 
        </Routes> */}
-       <A />
+       <UseReducerDemo />
 
     </div>
   )
