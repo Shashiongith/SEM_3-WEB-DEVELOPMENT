@@ -15,6 +15,7 @@ import TodoList from './class4/TodoList.jsx'
 import MemoDemo from './class5/MemoDemo.jsx'
 import Child from './class5/Child.jsx'
 import UseMemo from './class5/UseMemo.jsx'
+import Assingment from './class7/Assingment.jsx'
 
 const App = () => {
   
@@ -33,7 +34,7 @@ const App = () => {
        </Routes> */}
        {/* <UseReducerDemo /> */}
        {/* <TodoList /> */}
-        <UseMemo />
+        <Assingment />
         
 
     </div>
