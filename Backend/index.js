@@ -31,13 +31,58 @@
 //--------------------------------------------------------------------------------------------------------------
 
 
-//creating web server
-let http = require('http')
+// {//creating web server
+// let http = require('http')
 
-let server = http.createServer((req,res) => {
-    res.end("hello")
+// let server = http.createServer((req,res) => {
+//     //console.log(req.url,"kahan sai request aa rahe hai");
+//     //res.end("hello")
+
+//     if(req.url == '/'){
+//         res.end("home")
+//     }
+//     else if(req.url == '/about'){
+//         res.end("about")
+//     }
+//     else if(req.url == '/contact'){
+//         res.end("contact")
+//     }
+//     else if(req.url == '/gallery'){
+//         res.end("gallery")
+//     }
+// })
+
+// server.listen(4000,()=>{
+//     console.log("server runiiinnnngggggg");
+// })}
+
+//--------------------------------------------------------------------------------------------------------------
+//creating web server express
+const express = require('express')
+const app = express()
+
+app.use((req , res , next) =>{
+    console.log("rejected 1");
+    next()
+})
+app.use((req , res , next) =>{
+    console.log("rejected 2");
+    next()
 })
 
-server.listen(3000,()=>{
+app.get('/',(req,res)=>{
+    res.send("home")
+})
+app.get('/about',(req,res)=>{
+    res.send("about")
+})
+app.get('/contact',(req,res)=>{
+    res.send("contact")
+})
+app.get('/gallery',(req,res)=>{
+    res.send("gallery")
+})
+
+app.listen(4000,()=>{
     console.log("server runiiinnnngggggg");
 })
